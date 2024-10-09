@@ -5,7 +5,7 @@ This Python script helps organize your downloads folder by categorizing files in
 Usage
 1. Replace the downloads folder path
 
-Replace '/path/to/your/downloads/folder' with the actual path to your downloads folder in the script.
+Replace 'D:\Downloads' with the actual path to your downloads folder in the script.
 2. Run the script
 
 Run the script using Python (e.g., python organize_downloads.py).
@@ -18,9 +18,10 @@ The script organizes files into the following categories:
 
     images: jpg, jpeg, png, gif, bmp
     videos: mp4, avi, mov, wmv
-    documents: docx, doc, pdf, txt
+    executables: exe
+    documents: docx, doc, pdf, txt, epub, pptx, ppt, xlsx
     audio: mp3, wav, ogg
-    archives: zip, rar, 7z, tar
+    archives: zip, rar, 7z, tar, pkg
     others: catch-all for unknown file types
 
 Notes
@@ -30,11 +31,11 @@ Notes
 
 Customization
 
-If you need to add or modify categories, you can do so by editing the categories dictionary in the script. For example, you can add a new category for exe files by adding the following line:
+If you need to add or modify categories, you can do so by editing the categories dictionary in the script. For example, you can add a new category for iso files by adding the following line:
 
 python
 
-categories['powerpoints'] = ['pptx']
+categories['iso_files'] = ['iso']
 
 Scheduling the Script
 
